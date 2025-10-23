@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --principal-color: #3561FF;
+    --secundary-color: #FEB45B;
+    --secundary-color-hover:#FFD300;
+    --third-color: #E976A9;
+    --forth-color: #83B20E;
+    --fifth-color: #ED692E;
+    --bc-color: #F9F9FE;
+    --bc-axiliar-color: white;
+    --text-color: #111B3E;
+    --text-auxiliar-color: #6D728A;
+    --axiliar-color: #E5ECFF;
+    font-size: 62.5%;
+    --title-font: 'Raleway', sans-serif;
+    --principal-font: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--principal-font);
+    
+}
+
+.html{
+    background-color: var(--bc-color);
+}
+
+.main,
+.header,
+.footer{
+    font-size: 1.6rem;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--principal-color);
+    font-family: var(--title-font);
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-family: var(--title-font);
+}
+
+.linkless{
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------------------------------- Início*/
+
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../assets/line-home.svg);
+    background-position: center 0%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+    margin-bottom: 5vh;
+}
+
+.home.flex{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_text_group{
+    text-align: center;
+    width: 55%;
+    min-width: 30rem;
+}
+
+.home_text_group.flex{
+    flex-direction: column;
+}
+
+.home .title, 
+.home .title span{
+    font-size: 6rem;
+    font-family: var(--title-font);
+}
+
+.home p{
+    color: var(--text-auxiliar-color);
+    margin: 1rem 0px 2.5rem;
+    font-size: 1.6rem;
+}
+
+.register-btn{
+    font-weight: 700;
+    border: 1px solid var(--secundary-color); 
+    font-size: 1.7rem;
+    font-family: var(--title-font);
+    color:var(--secundary-color);
+    border-radius: 3rem;
+    margin-right: 1rem;
+    height: 5rem;
+    padding-inline: 2rem;
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    color: var(--bc-axiliar-color);
+    background-color:var(--secundary-color-hover);
+    border-color: var(--secundary-color-hover);
+}
+
+.home__section__btnLink__span{
+    font-weight: 900;
+    margin-left: 0.7rem;
+}
+
+.img-h{
+    width: 100%;
+    margin-top: -3rem;
+}
+
+.blue-empashis{
+    color: var(--principal-color);
+}
+
+
+/*------------------------------------------------------------------------------------- Parceiros*/
+.partners__section{
+    width: 100%;
+    min-height: 15vh;
+    background-color: var(--axiliar-color);
+    color: var(--text-auxiliar-color);
+}
+
+.partners__section__text{
+    margin-right: 3rem;
+}
+
+.partners__section__link{
+    margin: 3rem;
+}
+
+.partners__section.flex{
+    flex-wrap: wrap;
+}
+
+.partners__section__link img{
+    height: 5vh;
+    filter: grayscale(100%) brightness(1);
+    transition: 0.3s;
+}
+
+.partners__section__link img:hover{
+    filter: none;
+}
+
+/*------------------------------------------------------------------------------------- Serviços*/
+.services{
+   height: 70vh;
+}
+
+.services.flex{
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.services .subtitle{
+    text-align: center;
+    color: var(--text-auxiliar-color);
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.services hgroup{
+    width: 80%;
+}
+
+.services h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--principal-color);
+}
+
+.services_card_container.flex{
+    flex-wrap: wrap;
+}
+
+.services_card{
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bc-axiliar-color);
+    width: 26rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    border: 1px solid var(--axiliar-color);
+    box-shadow: 0px 4px 5px var(--axiliar-color);
+    transition: 0.3s;
+}
+
+.services_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px var(--axiliar-color);
+}
+
+
+.services_card img{
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    width: 4rem;
+}
+
+.services_card img.rose{
+    background-color: var(--third-color);
+}
+
+.services_card img.blue{
+    background-color: var(--principal-color);
+}
+
+.services_card img.green{
+    background-color: var(--forth-color);
+}
+
+.services_card img.orange{
+    background-color: var(--fifth-color);
+}
+
+.services_card_btn{
+    font-weight: 600;
+    color: var(--secundary-color);
+}
+
+.services_card .title{
+    font-size: 1.8rem;
+}
+
+.services_card .desc{
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    color: var(--text-auxiliar-color);
+}
+
+/*------------------------------------------------------------------------------------------ Canais*/
+.social_chanels{
+    height: 100vh;
+    width: 100%;
+}
+
+.social_chanels .title{
+    font-size: 3rem;
+    color: var(--principal-color);
+}
+
+.social_chanels p{
+    width: 50%;
+    color: var(--text-auxiliar-color);
+}
+
+.img-chanel{
+    width: 50%;
+}
+/*------------------------------------------------------------------------------------- Depoimentos*/
+
+.testimonials{
+    position: relative;
+    min-height: 60vh;
+}
+
+.testimonials_container{
+    height: 100%;
+    position: absolute;
+    border-radius: 4rem;
+    bottom: -5rem;
+    background-color: var(--secundary-color);
+    color: var(--bc-axiliar-color);
+    width: 80%;
+    padding: 2rem;
+}
+
+.testimonials_container h3{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--bc-axiliar-color);
+}
+
+.testimonials_container.flex{
+    flex-direction: column;
+}
+
+.testimonials_container .quote{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    width: 65%;
+    margin: 5rem 0px 3rem;
+}
+
+.author_name{
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.author_img{
+    height: 65px;
+    margin-right: 1.5rem;
+    border-radius: 15rem;
+    border: 1px solid var(--bc-axiliar-color);
+}
+.testimonials_btns{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.testimonials_btns #back_btn{
+    opacity: .5;
+    margin-right: 10px;
+}
+
+.cubes_img{
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
