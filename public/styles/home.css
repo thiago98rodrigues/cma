@@ -463,3 +463,65 @@
     background-color: var(--principal-color);
 }
 
+/*------------------------------------------------------------------------------------- fixar tamanho da página*/
+html, body { height: 100%; }
+body { margin: 0; overflow-x: hidden; }
+
+.home {
+  min-height: 90vh;      
+  width: 100%;
+  overflow: hidden;       
+}
+
+
+.home_text_group {
+  width: min(55%, 60ch);
+  min-width: 0;          
+}
+
+
+.img-h {
+  display: block;
+  max-width: min(44vw, 560px);  
+  width: 100%;
+  height: auto;
+  margin-top: -3rem;           
+}
+
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 900px) {
+  .home { display: flex; flex-direction: column; gap: 24px; }
+  .home_text_group { width: 100%; }
+  .img-h { max-width: 520px; margin-top: 0; }
+}
+
+.home { position: relative; }
+
+/* o botão deve ficar por cima das imagens */
+.register-btn {
+  position: relative;
+  z-index: 3;
+}
+
+/* a imagem do herói não deve “invadir” o CTA */
+.img-h {
+  margin-top: 2rem;      /* afasta a imagem do CTA */
+  /* se você usava margem negativa, remova: */
+  /* margin-top: -3rem;  */
+  position: relative;
+  z-index: 1;            /* fica abaixo do botão */
+}
+
+/* se houver wrappers/figuras decorativas do lado das fotos */
+.hero-shape,
+.hero-decor,
+.img-wrapper {
+  position: relative;    /* evita criar stacking context inesperado */
+  z-index: 0;            /* sempre abaixo do CTA */
+}
+
+/* no mobile você pode reduzir a distância */
+@media (max-width: 900px) {
+  .img-h { margin-top: 1rem; }
+}
