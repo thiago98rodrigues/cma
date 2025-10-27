@@ -1,0 +1,69 @@
+.main{
+    padding: 20rem 0px 10rem;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.share-btn{
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--bc-color);
+    bottom: -1rem;
+    right: 10%;
+    transition: 0.3s;
+}
+.share-btn:hover{
+    color: var(--secundary-color-hover);
+}
+
+article{
+    width: 70%;
+    margin: 7rem auto 3rem;
+}
+
+article p{
+    text-align: justify;
+    margin-top: 3rem;
+}
+
+article ul{
+    margin-left: 3rem;
+} 
+
+article ul li{
+    margin-top: 0.5rem;
+} 
+
+h1{
+    text-align: center;
+    margin: 3rem 0px;
+}
+
+article h2{
+    margin-top: 4rem;
+}
+
+.article_infos{
+    color: var( --text-auxiliar-color);
+    font-weight: 600;
+    margin: 0px 0px 4rem;
+}
+
+.article_infos p{
+    margin-inline: 2rem;
+}
+
+
+p.bold{
+    font-weight: bold;
+}

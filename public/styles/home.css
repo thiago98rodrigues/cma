@@ -1,0 +1,465 @@
+/*------------------------------------------------------------------------------------------------*/
+.header{
+    box-shadow: none;
+    border: none;
+    position: static;
+    background-color: none;
+}
+
+/*---------------------------------------------------------------------------------------- Início*/
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../assets/line-home.svg);
+    background-position: center 0%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+    margin-bottom: 5vh;
+}
+
+.home.flex{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_text_group{
+    text-align: center;
+    width: 55%;
+    min-width: 30rem;
+}
+
+.home_text_group.flex{
+    flex-direction: column;
+}
+
+.home .title, 
+.home .title span{
+    font-size: 6rem;
+    font-family: var(--title-font);
+}
+
+.home p{
+    color: var(--text-auxiliar-color);
+    margin: 1rem 0px 2.5rem;
+    font-size: 1.6rem;
+}
+
+.register-btn{
+    font-weight: 700;
+    border: 1px solid var(--secundary-color); 
+    font-size: 1.7rem;
+    font-family: var(--title-font);
+    color:var(--secundary-color);
+    border-radius: 3rem;
+    margin-right: 1rem;
+    height: 5rem;
+    padding-inline: 2rem;
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    color: var(--bc-axiliar-color);
+    background-color:var(--secundary-color-hover);
+    border-color: var(--secundary-color-hover);
+}
+
+.home__section__btnLink__span{
+    font-weight: 900;
+    margin-left: 0.7rem;
+}
+
+.img-h{
+    width: 100%;
+    margin-top: -3rem;
+}
+
+.blue-empashis{
+    color: var(--principal-color);
+}
+
+/*------------------------------------------------------------------------------------- Matriculas*/
+.open_enrollment{
+    min-height: 70vh;
+    background-color: var(--principal-color);
+    color: var(--bc-axiliar-color);
+}
+
+.open_enrollment.flex{
+    gap: 7rem;
+}
+
+.open_enrollment section{
+    width: fit-content;
+    margin: 2rem 0px;
+}
+
+.open_enrollment section .title{
+    font-size: 4.5rem;
+}
+
+.open_enrollment section p{
+    margin: 2rem 0px 4rem;
+}
+.open_enrollment img{
+    width: 30%;
+}
+
+.open_enrollment .btn{
+    font-family: var(--title-font);
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border: 2px solid var(--bc-axiliar-color);
+    color: var(--bc-axiliar-color);
+    width:fit-content ;
+    transition: 0.3s;
+}
+
+.open_enrollment .btn:hover{
+    background-color: var(--secundary-color-hover);
+    color: var(--bc-axiliar-color);
+    border-color: var(--secundary-color-hover);
+}
+
+/*------------------------------------------------------------------------------------- Parceiros*/
+.partners__section{
+    width: 100%;
+    min-height: 15vh;
+    background-color: var(--axiliar-color);
+    color: var(--text-auxiliar-color);
+}
+
+.partners__section__text{
+    margin-right: 3rem;
+}
+
+.partners__section__link{
+    margin: 3rem;
+}
+
+.partners__section.flex{
+    flex-wrap: wrap;
+}
+
+.partners__section__link img{
+    height: 5vh;
+    filter: grayscale(100%) brightness(1);
+    transition: 0.3s;
+}
+
+.partners__section__link img:hover{
+    filter: none;
+}
+
+/*------------------------------------------------------------------------------------- Feras CMA*/
+.feras_cma{
+    min-height: 80vh;
+    background-position: right;
+    background-size: 100%;
+    background-image: url('/public/assets/img/lines-4.svg');
+    overflow: scroll;
+    min-width: 100%;
+    scrollbar-width: none;
+    padding-left: 15rem;
+}
+
+.feras_cma h2{
+    margin-right: 5rem;
+    font-size: 3rem;
+}
+
+.feras_cma.flex{
+    justify-content: flex-start;
+}
+
+.feras_card_container.flex{
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.feras_cma .title{
+    color: var(--principal-color);
+}
+
+.feras_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+    height: 37rem;
+    position: relative;
+    margin: 1.3rem;
+    transition: 0.3s;
+}
+
+.fera_tag{
+    padding: 0.5rem 2rem;
+    font-family: 1.3rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    color: var(--secundary-color);
+    border: 1px solid var(--secundary-color);
+}
+
+.feras_card_header{
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background-color: var(--bc-axiliar-color);
+    border: 1px solid var(--axiliar-color);
+    box-shadow: 0px 4px 5px var(--axiliar-color);
+    height: 40%;
+    margin-top: -2rem;
+}
+
+.feras_card img{
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    object-fit: cover;
+    height: 70%;
+}
+
+.feras_card .desc{
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: var(--text-auxiliar-color);
+}
+
+/*------------------------------------------------------------------------------------- Serviços*/
+.services{
+   height: 60vh;
+}
+
+.services.flex{
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.services .subtitle{
+    text-align: center;
+    color: var(--text-auxiliar-color);
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.services hgroup{
+    width: 80%;
+}
+
+.services h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--principal-color);
+}
+
+.services_card_container.flex{
+    flex-wrap: wrap;
+}
+
+.services_card{
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bc-axiliar-color);
+    width: 26rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    border: 1px solid var(--axiliar-color);
+    box-shadow: 0px 4px 5px var(--axiliar-color);
+    transition: 0.3s;
+}
+
+.services_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px var(--axiliar-color);
+}
+
+
+.services_card img,
+.social-link img{
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    width: 4rem;
+}
+
+.services_card img.rose, 
+.social-link img.rose{
+    background-color: var(--third-color);
+}
+
+.services_card img.blue{
+    background-color: var(--principal-color);
+}
+
+.services_card img.green{
+    background-color: var(--forth-color);
+}
+
+.services_card img.orange,
+.social-link img.orange{
+    background-color: var(--fifth-color);
+}
+
+.services_card_btn{
+    font-weight: 600;
+    color: var(--secundary-color);
+}
+
+.services_card .title{
+    font-size: 1.8rem;
+}
+
+.services_card .desc{
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    color: var(--text-auxiliar-color);
+}
+
+/*------------------------------------------------------------------------------------------ Canais*/
+.social_chanels{
+    height: 100vh;
+    width: 100%;
+}
+
+.social_chanels.flex{
+    gap: 5rem;
+}
+
+.social_chanels .title{
+    font-size: 3rem;
+    color: var(--principal-color);
+}
+
+
+.social_chanels p{
+    max-width: 30rem;
+    margin: 1rem;
+    color: var(--text-auxiliar-color);
+}
+
+.social_chanels .btn-pattern2{
+    margin-top: 2rem;
+    width:fit-content;
+    padding-inline: 2rem;
+}
+
+.social_media_links{
+    margin-top: 3rem;
+}
+
+.social_media_links a{
+    margin-right: 0.5rem;
+    display: inline;
+}
+
+.social-link img.black{
+    background-color: var(--text-color);
+}
+
+.img-chanel{
+    width: 45%;
+}
+
+/*------------------------------------------------------------------------------------- Depoimentos*/
+
+.testimonials{
+    position: relative;
+    min-height: 60vh;
+}
+
+.testimonials_container{
+    height: 100%;
+    position: absolute;
+    border-radius: 4rem;
+    bottom: -5rem;
+    background-color: var(--secundary-color);
+    color: var(--bc-axiliar-color);
+    width: 80%;
+    padding: 2rem;
+}
+
+.testimonials_container h3{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--bc-axiliar-color);
+}
+
+.testimonials_container.flex{
+    flex-direction: column;
+}
+
+.testimonials_container .quote{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    width: 65%;
+    margin: 5rem 0px 3rem;
+}
+
+.author_name{
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.author_img{
+    height: 65px;
+    margin-right: 1.5rem;
+    border-radius: 15rem;
+    border: 1px solid var(--bc-axiliar-color);
+}
+.testimonials_btns{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.testimonials_btns #back_btn{
+    opacity: .5;
+    margin-right: 10px;
+}
+
+.cubes_img{
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+/*------------------------------------------------------------------------------------- Botão Contatos*/
+
+.contacts{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.chat-btn{
+    color: var(--secundary-color);
+    border-radius: 10rem;
+    height: 7rem;
+    width: 7rem;
+    border: 1px solid var(--axiliar-color);
+    background-color: var(--bc-axiliar-color);
+    transition: 0.3s;
+}
+
+.chat-btn img{
+    height: 2.5rem;
+}
+
+.chat-btn:hover{
+    color: var(--secundary-color-hover);
+    transform: scale(1.05);
+    background-color: var(--principal-color);
+}
+

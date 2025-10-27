@@ -2,38 +2,40 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footerStyle.css">
-    <link rel="stylesheet" href="headerStyle.css">
-    <link rel="shortcut icon" href="./public/assets/CMA.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/footerStyle.css">
+    <link rel="stylesheet" href="/public/styles/headerStyle.css">
+    <link rel="stylesheet" href="/public/styles/home.css">
+    <link rel="shortcut icon" href="/public/assets/CMA.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMA | Colégio Monsenhor Adelmar da Mota Valença</title>
 </head>
 <body>
     <header class="header flex">
-        <a href="" class="logo linkless">CMA.</a>
+        <a href="/index.html" class="logo linkless">CMA.</a>
         <nav class="nav">
-            <ul class="header__nav__link-list flex">
-                <li><a href="" class="header__nav__link linkless">Início</a></li>
-                <li><a href="" class="header__nav__link linkless">O Colégio</a></li>
-                <li><a href="" class="header__nav__link linkless">Ensino</a></li>
-                <li><a href="" class="header__nav__link linkless">Notícias</a></li>
+            <ul class="nav_link-list flex">
+                <li><a href="/public/pages/history.html" class="nav_link linkless">O Colégio</a></li>
+                <li><a href="" class="nav_link linkless">Ensino</a></li>
+                <li><a href="/public/pages/cma-news.html" class="nav_link linkless">Notícias</a></li>
+                <li><a href="/public/pages/about-us.html" class="nav_link linkless">Sobre</a></li>
+
             </ul>
         </nav>
-        <div class="header__section__button flex">   
-            <a href="" class="header__btn linkless title flex">Área do Aluno</a>
-            <button class="header__section__search-btn flex">
+        <section class="section_button flex">   
+            <a href="" class="header_btn btn-pattern2 linkless flex">Área do Aluno</a>
+            <a class="header_social-link flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
                 <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/>
                 </svg>
-              </button>
-            <button class="header__section__search-btn flex"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            </a>
+            <a class="header_social-link flex"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-              </svg></button>
-              <button class="header__section__search-btn flex"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              </svg></a>
+            <a class="header_social-link flex"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                 <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-              </svg></button>
-        </div>   
+            </svg></a>
+        </section>   
     </header>
     <main class="main">
         <article class="home flex">
@@ -43,15 +45,83 @@
                 <p>Olhos voltados para O Evangelhos, a prática da fraternidade e a formação intelectual para construção de atitudes indispensáveis à cidadania.</p>
                 <a href="" class="register-btn linkless flex">Garanta sua Vaga →</a>    
             </section>
-            <img class="img-h" src="img-inicio.svg" alt="">
+            <img class="img-h" src="/public/assets/img/img.png" alt="">
         </article>
         <section class="partners__section flex">
             <p class="partners__section__text">Nossos Parceiros</p>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="partners__section__link link"><img src="./public/assets/partnersLogo/tenorio-logo.png" alt=""></a>
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="partners__section__link link"><img src="./public/assets/partnersLogo/ftd-logo.svg" alt=""></a>
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="partners__section__link link"><img src="./public/assets/partnersLogo/opee-logo.png" alt=""></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="partners__section__link link"><img src="./public/assets/partnersLogo/tenorio-logo.png" alt=""></a>
+                
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="partners__section__link link"><img src="./public/assets/partnersLogo/ferreiratorresadv-logo.svg" alt=""></a>
         </section>
+
+        <article class="open_enrollment flex">
+            <section>
+                <h1 class="title">Reserva de<br>Matrícula 2026</h1>
+                <p>Formação acadêmica com princípios<br> cristãos. Educação que prepara para a vida<br> com excelência e valores.</p>
+                <a href="" class="btn linkless">Garanta sua Vaga →</a>
+            </section>
+            <img src="/public/assets/img/open.png" alt="">
+        </article>
+
+        <article class="feras_cma flex">
+            <div class="feras_card_container flex">
+                <h2 class="title">Feras <br>CMA</h2>
+                <section class="feras_card">
+                    <p class="fera_tag">fera</p>
+                    <img class="blue" src="https://images.unsplash.com/photo-1601392561050-340745ba9c25?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=626" alt="">
+                    <div class="feras_card_header">                       
+                        <h3 class="title">Luís Avelino</h3>
+                        <p class="desc">Aprovado nos cursos de educação física, fisioterapia, ciências contábeis e administração</p>
+                    </div>   
+                </section>
+
+                <section class="feras_card">
+                    <p class="fera_tag">fera</p>
+                    <img src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470" alt="">
+                    <div class="feras_card_header">                       
+                        <h3 class="title">Milena Camaro</h3>
+                        <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat prede-fined chunks as necessary.</p>
+                    </div>   
+                </section>
+
+                <section class="feras_card">
+                    <p class="fera_tag">fera</p>
+                    <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="">
+                    <div class="feras_card_header">                       
+                        <h3 class="title">Carlos Sinna</h3>
+                        <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat prede-fined chunks as necessary.</p>
+                    </div>   
+                </section>
+
+                <section class="feras_card">
+                    <p class="fera_tag">fera</p>
+                    <img src="https://plus.unsplash.com/premium_photo-1682787494953-33e83bc527d1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="">
+                    <div class="feras_card_header">                       
+                        <h3 class="title">Alan Guilhermo</h3>
+                        <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat prede-fined chunks as necessary.</p>
+                    </div>   
+                </section>
+
+                <section class="feras_card">
+                    <p class="fera_tag">fera</p>
+                    <img src="https://plus.unsplash.com/premium_photo-1681491123726-d0d8cd3da9a0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="">
+                    <div class="feras_card_header">                       
+                        <h3 class="title">Alan Guilhermo</h3>
+                        <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat prede-fined chunks as necessary.</p>
+                    </div>   
+                </section>
+
+                <section class="feras_card">
+                    <p class="fera_tag">fera</p>
+                    <img  src="https://images.unsplash.com/photo-1601392561050-340745ba9c25?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=626" alt="">
+                    <div class="feras_card_header">                       
+                        <h3 class="title">Alan Guilhermo</h3>
+                        <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat prede-fined chunks as necessary.</p>
+                    </div>   
+                </section>
+            </div>
         </article>
 
         <article class="services flex">
@@ -102,13 +172,21 @@
             <section>
                 <h2 class="title">Comtemplando <br>o Futuro</h2>
                 <p>Nós siga em todas as nossas redes socias, aproveite a nossa playlist CMA em foco</p>
+                <a href="" class="btn-pattern2 linkless flex">Acesse nosso canal →</a>
+
+                <section class="social_media_links">
+                    <a class="social-link flex"><img class="orange" src="public/assets/icons/threads.svg" alt=""></a>
+                    <a class="social-link flex"><img class="rose" src="public/assets/icons/instagram.svg" alt=""></a>
+                    <a class="social-link flex"><img class="black" src="public/assets/icons/twitter.svg" alt=""></a>
+                </section>  
             </section>
-            <img class="img-chanel" src="img-chanel.svg" alt="">
+
+            <img class="img-chanel" src="/public/assets/img/img-chanel.svg" alt="">
         </article>
         
         <article class="testimonials flex">
             <blockquote class="testimonials_container flex">
-                <img class="cubes_img" src="cubes.svg">
+                <img class="cubes_img" src="/public/assets/img/cubes.svg">
                 <h3 class="title flex">Depoimentos</h3>
                 <p class="quote">
                     "Trata-se de colégio particular de caráter religioso da ordem Diocesana. Com mais de 30 anos de atividades educacionais."
@@ -134,6 +212,16 @@
                 </search>
             </blockquote>
         </article>
+
+        <section class="contacts">
+        <div class="chat-btn flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentcolor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
+                <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg>
+        </div>
+       
+        </section>
     </main>
 
     <footer class="footer flex">
