@@ -1,0 +1,71 @@
+.main{
+    padding: 20rem 0px 10rem;
+    background-image: url('../../public/assets/img/line-1.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 15%;
+}
+
+article{
+    width: 70%;
+    margin: 7rem auto 3rem;
+}
+
+article p{
+    text-align: justify;
+    margin-top: 3rem;
+}
+
+article ul{
+    margin-left: 3rem;
+} 
+
+article ul li{
+    margin-top: 0.5rem;
+} 
+
+article section p{
+    width: 65%;
+    color: var(--text-auxiliar-color) ;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+article section{
+    margin-bottom: 7rem;
+}
+
+article section.flex{
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+article h2{
+    margin-top: 4rem;
+}
+
+p.bold{
+    font-weight: bold;
+}
+
+.register-btn{
+    font-weight: 700;
+    border: 1px solid var(--secundary-color); 
+    font-size: 1.7rem;
+    font-family: var(--title-font);
+    color:var(--secundary-color);
+    border-radius: 3rem;
+    height: 5rem;
+    padding-inline: 2rem;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    color: var(--bc-axiliar-color);
+    background-color:var(--secundary-color-hover);
+    border-color: var(--secundary-color-hover);
+}

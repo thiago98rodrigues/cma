@@ -1,0 +1,71 @@
+.main{
+    padding: 20rem 0px 10rem;
+}
+
+article{
+    width: 100%;
+    margin: 7rem auto 3rem;
+}
+
+article p{
+    width: 70%;
+    text-align: justify;
+    margin: 3rem auto 0px;
+}
+
+article ul{
+    width: 65%;
+    margin-left: 3rem;
+    margin: 3rem auto 0px;
+} 
+
+article ul li{
+    margin-top: 0.5rem;
+} 
+
+h1{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+}
+
+article h2{
+    margin-top: 4rem;
+}
+
+p.bold{
+    font-weight: bold;
+}
+
+.article_header.orange{
+    background-color: var(--fifth-color);
+}
+
+.article_header.rose{
+    background-color: var(--third-color);
+}
+
+.article_header.yellow{
+    background-color: var(--secundary-color-hover);
+}
+
+
+.article_header{
+    text-align: center;
+    height: 50vh;
+    color: var(--bc-color);
+    margin-bottom: 20vh;
+}
+
+.article_header.flex{
+    flex-direction: column;
+}
+
+.article_header .title{
+    font-size: 4.5rem;
+}
+
+.article_header img{
+    width: 50%;
+    margin: 5rem 0px -20vh;
+}
