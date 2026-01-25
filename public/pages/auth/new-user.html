@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/partial/header.css">
+    <link rel="stylesheet" href="../../styles/partial/popUp.css">
+    <link rel="stylesheet" href="../../styles/new-user.css">
+    <link rel="shortcut icon" href="../../assets/CMA.svg" type="image/x-icon" />
+    <title>Cadastrar Novo Colaborador | CMA.COLAB</title>
+</head>
+<body>
+<header class="header flex">
+    <p class="logo">CMA.<span>COLAB</span></p>
+
+    <nav>
+        <a href="./dashboard.html" class="linkless flex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+  <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+  <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+</svg>Painel</a>
+    </nav>
+    <section class="user_info">
+        <p id="userName">Nome</p>
+        <a class="linkless" id="openPopUp">Sair</a>
+    </section>
+</header>
+<main class="main flex">
+    <section class="text_info">
+        <h1>Adicionar Novo Colaborador</h1>
+        <p>Atenção: a funcionalidade de adicionar novos cadastros colaborados deve ser utilizada com responsabilidade. O uso leviano dessa funcionalidade pode comprometer a integridade dos dados, a segurança das informações e o bom funcionamento da plataforma. </p>
+    </section>
+
+    <form id="formMatricula" class="form">
+        <div class="input-group">
+            <label for="nomeCompleto">Nome completo</label>
+            <input id="nomeCompleto" name="nomeCompleto" type="text" required autocomplete="name">
+        </div>
+
+        <div class="input-group">
+            <label for="matricula">Matrícula</label>
+            <input id="matricula" name="matricula" type="text" placeholder="" required />
+         </div>
+
+        <div class="input-group">
+            <label for="dataNascimento">Data de nascimento</label>
+            <input id="dataNascimento" name="dataNascimento" type="date" required />
+        </div>
+
+        <div class="input-group">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="text" inputmode="tel" placeholder="(DD) 9xxxx-xxxx" required />
+        </div>
+
+        <div class="input-group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+
+        <div class="input-group">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" placeholder="Uma senha temporario será gerada." disabled >
+        </div>
+        <button type="button" class="register-btn">Cadastrar</button>
+
+        <div id="msg" class="flex"></div>   
+    </form>
+</main>
+
+
+<section class="flex" id="popUp_container">
+    <section class="flex" id="popUp">
+        <span id="closePopUp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </span>
+        <h2>Tem certeza que deseja sair?</h2>
+        <button class="btn" id="logOut">Confirmar</button>
+    </section>
+</section>
+<script src="../../scripts/new-user.js"></script>  
+</body>
+</html>

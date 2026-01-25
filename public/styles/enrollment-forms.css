@@ -1,0 +1,193 @@
+:root {
+    --bg-1: #f7f2ea;
+    --bg-2: #e9f0ff;
+    --card: #ffffff;
+    --text: #1b1b1f;
+    --muted: #5b5f6a;
+    --accent: #0b7285;
+    --accent-2: #2f9e44;
+    --shadow: 0 16px 40px rgba(12, 22, 34, 0.14);
+    --radius: 18px;
+    --ring: rgba(11, 114, 133, 0.2);
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background:
+        radial-gradient(1200px 480px at 10% -10%, rgba(11, 114, 133, 0.12), transparent 60%),
+        radial-gradient(900px 400px at 90% -20%, rgba(47, 158, 68, 0.12), transparent 55%),
+        linear-gradient(180deg, var(--bg-1), var(--bg-2));
+    min-height: 100vh;
+}
+
+.main {
+    padding: 120px 0 80px;
+}
+
+.enrollment-intro {
+    max-width: 920px;
+    margin: 0 auto 28px;
+    padding: 0 20px;
+    text-align: center;
+    animation: fadeUp 0.6s ease-out both;
+}
+
+.enrollment-title {
+    font-size: 60px;
+    letter-spacing: -0.02em;
+    margin: 0 0 6px;
+}
+
+.enrollment-titulo {
+    font-size: 37px;
+    margin: 0 0 10px;
+    color: var(--accent);
+}
+
+.enrollment-subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--muted);
+    margin: 0 0 18px;
+}
+
+.enrollment-description {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #2c2f35;
+}
+
+.container-form {
+    width: min(920px, 92vw);
+    margin: 0 auto;
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(20, 24, 33, 0.06);
+    padding: 28px;
+    animation: fadeUp 0.7s ease-out both;
+    animation-delay: 0.1s;
+}
+
+.form-layout {
+    width: 100%;
+}
+
+.form-matricula {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #d7dde7;
+    background: #f7f8fb;
+    color: var(--text);
+    font-size: 1.5rem;
+   
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: #ffffff;
+    box-shadow: 0 0 0 3px var(--ring);
+}
+
+.register-btn {
+    grid-column: 1 / -1;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 22px;
+    background: var(--fifth-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    box-shadow: 0 12px 24px rgba(11, 114, 133, 0.25);
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.03);
+}
+
+.register-btn:active {
+    transform: translateY(0);
+}
+
+#statusMsg{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.form-status {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 720px) {
+    .main {
+        padding-top: 100px;
+    }
+
+    .container-form {
+        padding: 22px;
+    }
+
+    .form-matricula {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .enrollment-description {
+        font-size: 0.95rem;
+    }
+
+    .register-btn {
+        width: 100%;
+    }
+}

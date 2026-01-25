@@ -231,12 +231,12 @@
 
 /*------------------------------------------------------------------------------------- Serviços*/
 .services{
-   height: 60vh;
+   min-height: 70vh;
 }
 
 .services.flex{
+    flex-wrap: wrap;
     gap: 5rem;
-    flex-direction: column;
 }
 
 .services .subtitle{
